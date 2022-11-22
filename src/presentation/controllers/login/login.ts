@@ -14,10 +14,6 @@ export class LoginController implements Controller {
 
   async handle (httpRequest: HttpRequest): Promise<HttpResponse> {
     try {
-      // const httpResponse: HttpResponse = {
-      //   body: '',
-      //   statusCode: 200
-      // }
       const requiredFields = ['email', 'password']
       for (const field of requiredFields) {
         if (!httpRequest.body[field]) {
