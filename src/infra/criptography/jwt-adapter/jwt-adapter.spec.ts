@@ -13,7 +13,7 @@ const makeSut = (): JwtAdapter => {
   return new JwtAdapter('secret')
 }
 
-describe('JwtAdapter', () => {
+describe('Jwt Adapter', () => {
   test('Should call sign with correct values', async () => {
     const sut = makeSut()
     const signSpy = jest.spyOn(jwt, 'sign')
