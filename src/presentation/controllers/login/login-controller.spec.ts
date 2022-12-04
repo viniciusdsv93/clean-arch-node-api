@@ -3,7 +3,7 @@ import { MissingParamError } from '../../errors'
 import { badRequest, ok, serverError, unauthorized } from '../../helpers/http/http-helpers'
 import { Validation } from '../../protocols/validation'
 import { HttpRequest } from '../../protocols'
-import { LoginController } from './login'
+import { LoginController } from './login-controller'
 
 const makeFakeRequest = (): HttpRequest => {
   return {
