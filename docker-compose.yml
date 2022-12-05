@@ -14,8 +14,6 @@ services:
     image: clean-node-api
     restart: always
     command: npm start
-    volumes:
-      - ./dist:/usr/src/clean-arch-node-api
     ports:
       - "5050:5050"
     links:
