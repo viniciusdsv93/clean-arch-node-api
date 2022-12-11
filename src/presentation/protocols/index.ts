@@ -1,3 +1,3 @@
 export * from './controller'
-export * from './emailValidator'
+export * from '../../validation/protocols/emailValidator'
 export * from './http'
